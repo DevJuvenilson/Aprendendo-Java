@@ -22,16 +22,23 @@
 const { gets, print } = require('../src/funcoes-auxiliares02');
 
 const n = gets();
-let maiorNumeroPar = 0;
+let maiorNumeroPar = null;
+let menorNumeroImpar = n;
 
 for (let i = 0; i < n; i++) {
 
     const numero = gets();
+
     if (numero % 2 == 0) {
         if (numero > maiorNumeroPar) {
             maiorNumeroPar = numero;
         };
+    } else {
+        if (numero < menorNumeroImpar) {
+            menorNumeroImpar = numero;
+        };
     };
 };
 
-print(maiorNumeroPar);
+print(`Maior número par: ${maiorNumeroPar};`);
+print(`Menor número impar: ${menorNumeroImpar};`);
