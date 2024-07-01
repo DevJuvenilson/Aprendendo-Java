@@ -19,7 +19,7 @@
 
 */
 
-const { gets, print } = require('../src/funcoes-auxiliares02');
+const { gets, print } = require('../../../src/funcoes-auxiliares02');
 
 const n = gets();
 let maiorNumeroPar = null;
